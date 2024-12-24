@@ -1,0 +1,16 @@
+{
+	"manifest_version": 3,
+	"name": "AZ GROUPiNG",
+	"description": "Azure Portal でリソースグループを表示した際、自動的に [種類でグループ化] するようにします。",
+	"version": "1.0.0",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://portal.azure.com/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	]
+}
